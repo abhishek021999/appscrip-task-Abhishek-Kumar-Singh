@@ -1,5 +1,5 @@
 import Items from "@/components/Items";
-import Sidebar from '@/components/Sidebar'
+import Sidebar_S from '@/components/Sidebar_S'
 
 import Products from "@/components/Products";
 import AuthProvider from "@/authContext/AuthProvider"
@@ -13,7 +13,7 @@ export default function Home() {
     </div>
     <Items/>
     <div className="flex gap-4">
-    <Sidebar/>
+    <Sidebar_S/>
     <Products/>
     </div>
     </AuthProvider>

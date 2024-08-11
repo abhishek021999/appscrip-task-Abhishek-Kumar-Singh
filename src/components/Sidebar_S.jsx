@@ -4,7 +4,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import { MdKeyboardArrowUp } from "react-icons/md";
 
 import { AuthContext } from '@/authContext/AuthProvider';
-function Sidebar() {
+function Sidebar_S() {
     const [showIdealFor, setShowIdealFor] = useState(false);
     const [showOccasion, setShowOccasion] = useState(false);
     const [showWork, setShowWork] = useState(false);
@@ -151,4 +151,4 @@ function Sidebar() {
     )
 }
 
-export default Sidebar
+export default Sidebar_S
