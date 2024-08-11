@@ -4,7 +4,6 @@ import { CiHeart } from "react-icons/ci";
 import { IoBagRemoveOutline } from "react-icons/io5";
 import { CiUser } from "react-icons/ci";
 import { RxHamburgerMenu } from "react-icons/rx";
-import Link from 'next/link'
 function navbar() {
   return (
     <div>
