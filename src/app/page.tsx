@@ -1,6 +1,6 @@
 import Items from "@/components/Items";
-import Image from "next/image";
-import Sidebar from "@/components/Sidebar";
+import Sidebar from '@/components/Sidebar'
+
 import Products from "@/components/Products";
 import AuthProvider from "@/authContext/AuthProvider"
 export default function Home() {

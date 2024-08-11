@@ -3,7 +3,7 @@ import { FaFlagUsa } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { CiFacebook } from "react-icons/ci";
 import { CiLinkedin } from "react-icons/ci";
-const Footer = () => {
+const Footer_F = () => {
   return (
     <footer className="bg-black text-white py-8">
       <div className="container mx-auto px-4">
@@ -104,4 +104,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Footer_F;
