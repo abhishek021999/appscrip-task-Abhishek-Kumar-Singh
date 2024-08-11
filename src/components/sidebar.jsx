@@ -2,9 +2,9 @@
 import React, { useContext, useState } from 'react'
 import { IoIosArrowDown } from "react-icons/io";
 import { MdKeyboardArrowUp } from "react-icons/md";
-import Link from "next/link"
+
 import { AuthContext } from '@/authContext/AuthProvider';
-function sidebar() {
+function Sidebar() {
     const [showIdealFor, setShowIdealFor] = useState(false);
     const [showOccasion, setShowOccasion] = useState(false);
     const [showWork, setShowWork] = useState(false);
@@ -151,4 +151,4 @@ function sidebar() {
     )
 }
 
-export default sidebar
+export default Sidebar
