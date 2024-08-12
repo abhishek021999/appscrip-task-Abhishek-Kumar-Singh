@@ -57,9 +57,9 @@ function Products() {
     return (
         <>
             {showUnshow ? (
-                <div className='shadow-xl lg:w-[940px] lg:grid lg:grid-cols-3 grid grid-cols-1 gap-20 lg:pr-6 m-auto '>
+                <div className=' lg:w-[940px] lg:grid lg:grid-cols-3 grid grid-cols-1 gap-3 gap-x-3 lg:pr-6 m-auto '>
                     {data.map((ele) => (
-                        <div key={ele.id} className=' lg:w-[230px] lg:h-[462px] w-[168px] h-[227px] m-auto'>
+                        <div key={ele.id} className='shadow-2xl lg:w-[330px] lg:h-[462px] w-[168px] h-[227px] m-auto '>
                             <div className='IMage_div'>
                                 <img className='lg:w-[300px] lg:h-[320px] w-[168px] h-[224px]' src={ele.image} alt={ele.title} />
                             </div>
@@ -71,11 +71,11 @@ function Products() {
                     ))}
                 </div>
             ) : (
-                <div className=' lg:w-[93%] lg:m-auto lg:mr-[30px] lg:grid lg:grid-cols-4 grid grid-cols-2 gap-y-3 gap-x-3 px-[10px] m-auto mt-2 mb-20' >
+                <div className=' lg:w-[93%] lg:m-auto lg:mr-[30px] lg:grid lg:grid-cols-4 grid grid-cols-2 lg:gap-y-3 gap-x-3 gap-y-3   px-[10px] m-auto mt-2 lg:mb-20' >
                     {data.map((ele) => (
-                        <div key={ele.id} className=' shadow-2xl lg:w-[300px] lg:h-[462px] w-[168px] h-[380px]'>
+                        <div key={ele.id} className=' shadow-2xl lg:w-[366px] lg:h-[500px] w-[168px] h-[380px]'>
                             <div className='IMage_div'>
-                                <img className='lg:w-[300px] lg:h-[320px] w-[168px] h-[200px]' src={ele.image} alt={ele.title} />
+                                <img className=' lg:text-center lg:w-[340px] lg:h-[320px] w-[168px] h-[200px]' src={ele.image} alt={ele.title} />
                             </div>
                             <div className='lg:w-[300px] lg:h-[50px] lg:px-[5px] lg:mt-4 w-[168px] h-[45px] px-[5px] mt-4'>
                                 <div className='flex'>
