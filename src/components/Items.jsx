@@ -23,7 +23,7 @@ function Items() {
         <div className="lg:text-lg lg:font-semibold lg:block hidden">{ItemLength} ITEMS</div>
 
         <div className="lg:flex  lg:items-center  ">
-          <button className="text-sm text-gray-600 mr-4" onClick={()=>setshowunshow(!showUnshow)}>
+          <button className="text-sm text-gray-600 mr-4 block " onClick={()=>setshowunshow(!showUnshow)}>
             {showUnshow ?
                 <span className="lg:block lg:flex lg:items-center hidden font-[700] text-[16px]  ">
                 <IoIosArrowBack className='lg:block hidden' />
@@ -36,10 +36,11 @@ function Items() {
 
             }
             
-            <span className='lg:hidden block font-[700] text-[#252020] text-[14px]'>
+            
+          </button>
+          <span className='lg:hidden block font-[700] text-[#252020] text-[14px]'>
                 FILTER
             </span>
-          </button>
           </div>
           </div>
           <div className="h-6 border-2 border-[#E5E5E5] mx-4 block lg:hidden"></div>
