@@ -1,6 +1,6 @@
 .grid_div_3 {
     width: 940px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
