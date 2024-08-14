@@ -2,7 +2,7 @@
 import React, { useContext, useState } from 'react'
 import { IoIosArrowDown } from "react-icons/io";
 import { MdKeyboardArrowUp } from "react-icons/md";
-
+import '../Styles/Sidebar.css'
 import { AuthContext } from '@/authContext/AuthProvider';
 function Sidebar_S() {
     const [showIdealFor, setShowIdealFor] = useState(false);
@@ -10,9 +10,12 @@ function Sidebar_S() {
     const [showWork, setShowWork] = useState(false);
     const [showFabric, setShowFabric] = useState(false);
     const [showSegment, setShowSegment] = useState(false);
+    const [suitable, setsuitable] = useState(false);
+    const [Raw, setRaw] = useState(false);
+    const [pattern, setpattern] = useState(false);
     const {showUnshow,setshowunshow}=useContext(AuthContext)
     const {Allcategory, setCategory} = useContext(AuthContext);
-  
+
 
        // Handler for checkbox change
        const handleCheckboxChange = (event) => {
@@ -27,17 +30,17 @@ function Sidebar_S() {
         <>
         {
             showUnshow && (
-                <div className="p-4 lg:w-[350px] lg:ml-[70px] bg-white ">
+                <div className="sidebar_conatiner">
                 {/* Customizable Filter */}
-                <div className="mb-4">
-                <input type="checkbox" id="customizable" className="mr-2 scale-125" />
+                <div className="inputdiv">
+                <input type="checkbox" id="customizable" className="input1 " />
         
-                  <label htmlFor="customizable" className="text-gray-800 font-semibold">Customizable</label>
+                  <label htmlFor="customizable" className="customizable_label">Customizable</label>
                 </div>
           
                 {/* Ideal For Filter */}
                 <hr />
-                <div className="mb-8 lg:mt-8">
+                <div className="Ideal_For_Filter">
                   <div 
                     className="flex justify-between items-center cursor-pointer" 
                     onClick={() => setShowIdealFor(!showIdealFor)}>
@@ -142,6 +145,51 @@ function Sidebar_S() {
                     </div>
                   )}
                 </div>
+                <hr />
+                <div className="mb-8 lg:mt-8">
+                  <div 
+                    className="flex justify-between items-center cursor-pointer" 
+                    onClick={() => setsuitable(!suitable)}>
+                    <span className="text-[#252020]  font-[700] text-[18px]">SUITABLE FOR<br />All</span>
+                    <span>{suitable ? <MdKeyboardArrowUp /> : <IoIosArrowDown />}</span>
+                  </div>
+                  {showSegment && (
+                    <div className="mt-2">
+                      {/* Add checkboxes for Segment */}
+                    </div>
+                  )}
+                </div>
+                <hr />
+                <div className="mb-8 lg:mt-8">
+                  <div 
+                    className="flex justify-between items-center cursor-pointer" 
+                    onClick={() => setRaw(!Raw)}>
+                    <span className="text-[#252020]  font-[700] text-[18px]">RAW MATERIAL<br />All</span>
+                    <span>{Raw? <MdKeyboardArrowUp /> : <IoIosArrowDown />}</span>
+                  </div>
+                  {showSegment && (
+                    <div className="mt-2">
+                      {/* Add checkboxes for Segment */}
+                    </div>
+                  )}
+                </div>
+                <hr />
+                <div className="mb-8 lg:mt-8">
+                  <div 
+                    className="flex justify-between items-center cursor-pointer" 
+                    onClick={() => setpattern(!pattern)}>
+                    <span className="text-[#252020]  font-[700] text-[18px]">PATTERN<br />All</span>
+                    <span>{pattern? <MdKeyboardArrowUp /> : <IoIosArrowDown />}</span>
+                  </div>
+                  {showSegment && (
+                    <div className="mt-2">
+                      {/* Add checkboxes for Segment */}
+                    </div>
+                  )}
+                </div>
+                <hr />
+
+                
               </div>
 
             )

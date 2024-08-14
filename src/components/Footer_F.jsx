@@ -1,105 +1,79 @@
 import React from 'react';
-import { FaFlagUsa } from "react-icons/fa";
+
 import { FaInstagram } from "react-icons/fa";
 import { CiFacebook } from "react-icons/ci";
 import { CiLinkedin } from "react-icons/ci";
+import '../Styles/Footer_F.css'
+import { FaFlagUsa } from "react-icons/fa";
 const Footer_F = () => {
   return (
-    <footer className="bg-black text-white py-8">
-      <div className="container mx-auto px-4">
-        {/* Top Section */}
-        <div className="lg:flex lg:justify-between border-b border-gray-600 pb-8 mb-8">
-          {/* Left Side */}
-          <div className="lg:w-1/2 lg:ml-[100px]">
-            <h2 className="text-[20px] font-[700] mb-2">BE THE FIRST TO KNOW</h2>
-            <p className="text-white font-[400] mb-4">Sign up for updates from mettä muse.</p>
-            <form className="flex">
-              <input 
-                type="email" 
-                placeholder="Enter your e-mail..." 
-                className="flex-grow lg:w-[584px] px-4 py-2 bg-white border-gray-600 focus:outline-none"
-              />
-              <button 
-                type="submit" 
-                className="bg-gray-600  hover: bg-[#000000] px-6 py-2 text-white  font-semibold">
-                SUBSCRIBE
-              </button>
-            </form>
-          </div>
-          {/* Right Side */}
-          <div className="lg:w-1/2 lg:text-right mt-8 lg:mt-0 lg:mr-[150px]">
-            <h2 className="text-lg font-bold mb-2">CONTACT US</h2>
-            <p className="text-white font-[400]">+44 221 133 536D</p>
-            <p className="text-white font-[400]">customercare@mettamuse.com</p>
-            <hr className='block lg:hidden mt-5' />
-            <h2 className="text-lg font-bold mt-4 mb-2">CURRENCY</h2>
-            <p className="text-white font-[400] flex items-center  lg:justify-end">
-              <span className="mr-2"><FaFlagUsa /></span> USD
-            </p>
-          </div>
-        </div>
+    <footer className="footer_conatiner">
+        <div className='upper_part'>
+            <div className="left_side">
+                <h1>BE THE FIRST TO KNOW </h1>
+                <p className='mob_2'>Sign up for updates from mettā muse.</p>
+                <p className='mobile_text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. this is simply dummy text.</p>
+                <div className='input_div'>
+                  <input type="text" />
+                  <button>SUBCRIBE</button>
+                </div>
+                <hr className='lg:hidden block w-[90%] ' />
 
-        {/* Bottom Section */}
-        <div className="lg:flex lg:justify-between">
-          <div className="lg:w-1/2">
-            <div className="flex flex-col lg:flex-row mb-8 gap-24">
-              {/* Left Columns */}
-              <div className="mb-4 lg:mb-0 lg:mr-16 lg:ml-[100px]">
-                <h3 className="font-semibold mb-4">mettā muse</h3>
-                <ul className="space-y-2 text-white font-[400]">
-                  <li>About Us</li>
-                  <li>Stories</li>
-                  <li>Artisans</li>
-                  <li>Boutiques</li>
-                  <li>Contact Us</li>
-                  <li>EU Compliances Docs</li>
-                </ul>
-              </div>
-              {/* Right Columns */}
-              <div>
-                <h3 className="font-semibold mb-4">QUICK LINKS</h3>
-                <ul className="space-y-2 text-white font-[400]">
-                  <li>Orders & Shipping</li>
-                  <li>Join/Login as a Seller</li>
-                  <li>Payment & Pricing</li>
-                  <li>Return & Refunds</li>
-                  <li>FAQs</li>
-                  <li>Privacy Policy</li>
-                  <li>Terms & Conditions</li>
-                </ul>
-              </div>
             </div>
-          </div>
+            <div className="right_side">
+              <h1>CONTACT US</h1>
+              <p>+44 221 133 5360</p>
+              <p>customercare@mettamuse.com</p>
+              <h1>Currency</h1>
+              <div className='flag'><FaFlagUsa /><p>USD </p></div>
+              <p id='trans'>Transactions will be completed in Euros and a currency reference is available on hover.</p>
 
-          <div className="lg:w-1/2 lg:text-right lg:mr-[150px]">
-            {/* Follow Us Section */}
-            <div className="mb-8">
-              <h3 className="font-semibold mb-4">FOllOW US</h3>
-              <ul className="flex justify-center lg:justify-end space-x-4 text-white font-[400]">
-                <li><FaInstagram size={25}/></li>
-                <li><CiFacebook size={25}/></li>
-                <li><CiLinkedin size={25}/></li>
+            </div>
+        </div>
+        <hr className='hr_divder' />
+
+        <div className="lower_part">
+            <div className="part1">
+              <h1>mettā muse</h1>
+              <ul>
+              <li>About Us</li>
+              <li>Stories</li>
+              <li>Artisans</li>
+              <li>Boutiques</li>
+              <li>Contact Us</li>
+              <li>EU Compliances Docs</li>
               </ul>
             </div>
-            {/* Payment Methods */}
-            <div>
-              <h3 className="font-semibold mb-4">mettā muse ACCEPTS</h3>
-              <ul className="flex justify-center lg:justify-end space-x-4">
-                <li><img src="\gpay.png" alt="gpay" className="h-8" /></li>
-                <li><img src="\applepay.png" alt="applepay" className="h-8" /></li>
-                <li><img src="\amex.png" alt="amex" className="h-8" /></li>
-                <li><img src="\master.png" alt="master" className="h-8" /></li>
-                <li><img src="\paypal.png" alt="paypal" className="h-8" /></li>
+            <hr className='lg:hidden block w-[100%] ' />
+            <div className="part1">
+              <h1>Quick Links </h1>
+              <ul>
+              <li>Orders & Shipping </li>
+              <li>Join/Login as a Seller</li>
+              <li>Payment & Pricing</li>
+              <li>Return & Refunds</li>
+              <li>FAQs Us</li>
+              <li>Privacy Policy</li>
+              <li>Terms & Conditions</li>
               </ul>
             </div>
-          </div>
-        </div>
+            <hr className='lg:hidden block w-[100%] ' />
+            <div className="part3">
+              <h1>FOLLOW US</h1>
+              <div className='social_icon'><span><FaInstagram size={25}/></span><span><CiLinkedin size={25}/></span></div>
+              <hr className='lg:hidden block w-[100%] mb-4' />
+              <h1>mettā muse Accepts</h1>
+              <div className='payment_img'>
+                <img src="/gpay.png" alt="gpay" />
+                <img src="/master.png" alt="master" />
+                <img src="/paypal.png" alt="paypal" />
+                <img src="/amex.png" alt="amex" />
+                <img src="/applepay.png" alt="applepay" />
+              </div>
+            </div>
 
-        {/* Footer Bottom */}
-        <div className="text-center text-white mt-8 font-[400]">
-          Copyright © 2023 mettamuse. All rights reserved.
         </div>
-      </div>
+        <p id='copywright'>Copyright © 2023 mettamuse. All rights reserved.</p>
     </footer>
   );
 };

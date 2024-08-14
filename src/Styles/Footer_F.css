@@ -1,0 +1,251 @@
+/* Base styles */
+
+.footer_conatiner {
+    background-color: black;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.upper_part {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 90px;
+}
+
+.left_side {}
+
+.left_side > h1 {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.left_side > p {
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.input_div {
+    width: 584px;
+    display: flex;
+    height: 48px;
+    margin-top: 50px;
+}
+
+.input_div > input {
+    width: 80%;
+    outline: none;
+}
+
+.input_div > button {
+    background-color: gray;
+    width: 20%;
+}
+
+.right_side {
+    padding-left: 250px;
+}
+
+.right_side > h1 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.right_side > p {
+    margin-top: 15px;
+}
+
+#trans {
+    font-size: 12px;
+}
+
+.flag {
+    display: flex;
+    gap: 10px;
+}
+
+.hr_divder {
+    width: 100%;
+    margin-top: 30px;
+    padding-bottom: 60px;
+}
+
+.part1 {
+    width: 166px;
+}
+
+.part1 > h1 {
+    font-family: Simplon Norm;
+    font-size: 24.71px;
+    font-weight: 700;
+    line-height: 29.66px;
+}
+
+.part1 li {
+    margin-top: 15px;
+}
+
+.lower_part {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.social_icon {
+    display: flex;
+    gap: 10px;
+}
+
+.payment_img {
+    display: flex;
+    gap: 10px;
+}
+
+.payment_img img {
+    width: 40px;
+    height: 40px;
+}
+
+.social_icon {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.part3 h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#copywright {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 50px;
+    padding-bottom: 30px;
+}
+
+.mobile_text {
+    display: none;
+}
+
+.mob_2 {
+    display: block;
+}
+
+/* Responsive styles for mobile screens (max-width: 430px) */
+@media only screen and (max-width: 430px) {
+    .footer_conatiner {
+        width: 100%; /* Adjust the container width to fit the mobile screen */
+        padding: 10px; /* Adjust padding for mobile */
+    }
+
+    .upper_part {
+        flex-direction: column; /* Stack the content vertically */
+        padding-top: 30px; /* Adjust padding for mobile */
+    }
+    .hr_divder{
+        margin-bottom: -50px;
+        width: 80%;
+        margin-left: 40px;
+    }
+
+    .left_side > h1 {
+        font-size: 18px; /* Reduce font size */
+        margin-bottom: 10px; /* Add margin for spacing */
+    }
+
+    .left_side > p {
+        font-size: 14px; /* Reduce font size */
+        margin-top: 10px; /* Adjust margin for mobile */
+    }
+
+    .input_div {
+        width: 100%; /* Make the input container full-width */
+        flex-direction: column; /* Stack the input and button */
+        height: auto; /* Allow flexible height */
+        margin-top: 20px; /* Adjust margin for mobile */
+    }
+
+    .input_div > input {
+        width: 100%; /* Make the input full-width */
+        margin-bottom: 10px; /* Add spacing between input and button */
+    }
+
+    .input_div > button {
+        width: 100%; /* Make the button full-width */
+    }
+
+    .right_side {
+        padding-left: 0; /* Remove left padding */
+        margin-top: 20px; /* Add margin for spacing */
+    }
+
+    .right_side > h1 {
+        font-size: 18px; /* Reduce font size */
+        margin-top: 10px; /* Adjust margin for mobile */
+    }
+
+    .right_side > p {
+        margin-top: 10px; /* Adjust margin for mobile */
+        font-size: 14px; /* Reduce font size */
+    }
+
+    .part1 > h1 {
+        font-size: 18px; /* Adjust font size for headings */
+        line-height: 25px; /* Adjust line height */
+    }
+
+    .part1 li {
+        margin-top: 10px; /* Adjust spacing between list items */
+        font-size: 14px; /* Reduce font size for list items */
+    }
+
+    .lower_part {
+        flex-direction: column; /* Stack content vertically */
+        gap: 20px; /* Add spacing between elements */
+        margin-top: 30px; /* Add margin for spacing */
+    }
+
+    .social_icon {
+        margin-top: 10px; /* Adjust margin */
+        margin-bottom: 20px; /* Adjust bottom margin */
+    }
+
+    .payment_img {
+        margin-top: 10px; /* Adjust margin */
+    }
+
+    .payment_img img {
+        width: 30px; /* Reduce image size */
+        height: 30px; /* Reduce image size */
+    }
+    .part3 h1{
+        font-size: 18px;
+    }
+
+    #copywright {
+        font-size: 12px; /* Reduce font size */
+        margin-top: 30px; /* Adjust top margin */
+        padding-bottom: 20px; /* Adjust bottom padding */
+    }
+    .flag{
+        margin-top: 20px;
+    }
+    #trans{
+        display: none;
+    }
+
+    .mobile_text {
+        display: block; /* Show mobile-specific text */
+        font-size: 14px; /* Adjust font size */
+    }
+
+    .mob_2 {
+        display: none; /* Hide non-mobile content */
+    }
+}
