@@ -73,7 +73,7 @@
         width: 90%; /* Full width on mobile */
         margin-right: 0; /* Remove right margin */
         margin: auto;
-        margin-right: 30px;
+        
     }
 
     .card_4 {
@@ -91,7 +91,8 @@
 
     .title_div, .title_grid4 {
         width: 100%; /* Make title containers full width */
-        padding: 0 10px; /* Adjust padding */
+        padding-left: 0px;
+        padding-right: 0px;
         margin-top: 10px; /* Adjust margin */
     }
 
