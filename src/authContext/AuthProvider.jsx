@@ -9,8 +9,8 @@ function AuthProvider({children}) {
     const [showUnshow,setshowunshow]=useState(false)
     const [ItemLength,setItem]=useState(0)
     const [Allcategory, setCategory] = useState({
-      men: "",
-      women: "",
+      mennckjdfkjkjfhhdjkfhkj: "",
+      womenbjfjdbfj: "",
       electronics: "",
       jewelery: "",
   });
